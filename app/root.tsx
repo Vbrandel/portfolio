@@ -9,6 +9,7 @@ import {
 
 import type { Route } from "./+types/root";
 import "./app.css";
+import Sidebar from "./components/Sidebar";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -23,7 +24,7 @@ export const links: Route.LinksFunction = () => [
   },
 ];
 
-export function Layout({ children }: { children: React.ReactNode }) {
+export function Layout() {
   return (
     <html lang="en">
       <head>
@@ -33,7 +34,19 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
-        {children}
+        {/* Layout principal en 2 colonnes */}
+        <div className="flex h-screen">
+          {/* Sidebar à gauche */}
+          <div className="w-1/4 text-white">
+            <Sidebar />
+          </div>
+
+          {/* Contenu des routes à droite */}
+          <div className="flex-1 overflow-y-auto p-6">
+            <Outlet />
+          </div>
+        </div>
+
         <ScrollRestoration />
         <Scripts />
       </body>
@@ -54,7 +67,7 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
     message = error.status === 404 ? "404" : "Error";
     details =
       error.status === 404
-        ? "The requested page could not be found."
+        ? "Hey."
         : error.statusText || details;
   } else if (import.meta.env.DEV && error && error instanceof Error) {
     details = error.message;
