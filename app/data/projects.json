@@ -1,0 +1,59 @@
+[
+  {
+    "img": "app/assets/p6.webp",
+    "title": "Kasa",
+    "content": "Application ReactJS",
+    "description": "Intégration de la maquette Figma, rendre la page dynamique avec ReactJS, création de composants dynamiques..",
+    "stack": ["ReactJS"],
+    "link": "https://github.com/Vbrandel/Kasa"
+  },
+  {
+    "img": "app/assets/leaguetracker.webp",
+    "title": "League Tracker",
+    "content": "Application ReactJS, API RIOT Games",
+    "description": "Création d'une application web pour suivre le résultat des parties classés league of legend de notre serveur discord",
+    "stack": ["ReactJS", "API","Javascript","Tailwind"],
+    "link": "https://github.com/monprojet2"
+  },
+  {
+    "img": "app/assets/vinyle.webp",
+    "title": "Vinyle collection",
+    "content": "Application ReactJS",
+    "description": "Création d'une application web pour obtenir ma collection de vinyle via un fichier JSON ",
+    "stack": ["ReactJS", "Tailwind", "Javascript"],
+    "link": "https://github.com/monprojet2"
+  },
+  {
+    "img": "app/assets/p7.webp",
+    "title": "Mon vieux grimoire",
+    "content": "Application ReactJS et Node",
+    "description": "Création d'un serveur avec NodeJS, Express et MongoDB. Création d'une API Rest",
+    "stack": ["React", "Express", "Express","MongoDB"],
+    "link": "https://github.com/monprojet2"
+  },
+  {
+    "img": "app/assets/p3.webp",
+    "title": "Sophie Bluel",
+    "content": "Page web dynamique",
+    "description": "Intégration de la maquette Figma, rendre la page web dynamique avec javascript (création d'un modal, d'une page de connexion, d'un formulaire de création de compte fonctionnel).",
+    "stack": ["Javascript", "CSS"],
+    "link": "https://github.com/monprojet2"
+  },
+  {
+    "img": "app/assets/pomodoro.webp",
+    "title": "Pomodoro",
+    "content": "Création d'une application web",
+    "description": "Création d'un pomodoro (timer avec étapes) en javascript",
+    "stack": ["Javascript", "Tailwind"],
+    "link": "https://github.com/monprojet2"
+  },
+  {
+    "img": "app/assets/booki.webp",
+    "title": "Booki",
+    "content": "Création d'une page web statique",
+    "description": "Intégration d'une maquette figma avec HTML, CSS (flexbox)",
+    "stack": ["CSS"],
+    "link": "https://github.com/monprojet2"
+  }
+]
+

@@ -5,15 +5,21 @@ type CardProps = {
   content?: string;
   className?: string;
   children?: React.ReactNode;
+  iconClassName?: string; // Optionnel, pour personnaliser l'icône
 };
 
-export default function Cards({ title, content, className = "", children }: CardProps) {
+export default function Cards({ title, content, className = "", children, iconClassName = "fa-solid fa-user" }: CardProps) {
   return (
     <div
-      className={`rounded-2xl shadow-md p-6 bg-amber-800 ${className}`}
+      className={`rounded-xl p-6 bg-stone-200 ${className} transition duration-300 hover:scale-101`}
     >
-      {title && <h2 className="text-xl font-bold mb-2">{title}</h2>}
-      {content && <p className="text-gray-700">{content}</p>}
+      {title && (
+        <div className="flex items-center gap-3 mb-3">
+          <i className={`${iconClassName} text-2xl text-stone-800`} />
+          <h2 className="text-2xl font-bold text-stone-800">{title}</h2>
+        </div>
+      )}
+      {content && <p className="text-stone-800 leading-7">{content}</p>}
       {children}
     </div>
   );

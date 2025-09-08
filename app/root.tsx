@@ -5,6 +5,7 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
+  useLocation,
 } from "react-router";
 
 import type { Route } from "./+types/root";
@@ -21,10 +22,18 @@ export const links: Route.LinksFunction = () => [
   {
     rel: "stylesheet",
     href: "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap",
+  },  
+  {
+    rel: "stylesheet",
+    href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css",
+    crossOrigin: "anonymous",
   },
+
 ];
 
 export function Layout() {
+  const location = useLocation();
+  const isProjetsPage = location.pathname === "/projets";
   return (
     <html lang="en">
       <head>
@@ -35,9 +44,9 @@ export function Layout() {
       </head>
       <body>
         {/* Layout principal en 2 colonnes */}
-        <div className="flex h-screen">
+        <div className="flex-col h-screen md:flex md:flex-row">
           {/* Sidebar à gauche */}
-          <div className="w-1/4 text-white">
+          <div className={`md:w-1/4 text-white${isProjetsPage ? " hidden md:block" : ""}`}>
             <Sidebar />
           </div>
 
