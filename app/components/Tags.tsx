@@ -11,7 +11,7 @@ export default function Tags({ title, className = "", children }: TagsProps) {
     <div
       className={`rounded-xl p-3 bg-stone-600 transition duration-300 hover:scale-110 ${className}`}
     >
-      {title && <h4 className="text-lg font-bold ">{title}</h4>}
+      {title && <h4 className="text-md font-bold ">{title}</h4>}
       {children}
     </div>
   );

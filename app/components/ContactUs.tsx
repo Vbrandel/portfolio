@@ -36,7 +36,7 @@ export const ContactUs: React.FC = () => {
   };
 
   return (
-    <section>
+    <section id="contact-form" className="scroll-smooth">
       <div className="py-8 px-4 mx-auto max-w-screen-md">
         <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-stone-800 dark:text-stone-800">
           Envoyez moi un message

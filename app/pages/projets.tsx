@@ -24,7 +24,7 @@ export default function Projets() {
       title="A propos de moi"
       iconClassName="fa-solid fa-book"
        className="col-span-2">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 2xl:md-grid-col-4 gap-4">
           {projects.map((project: any) => (
             <CardsProject
               key={project.title}
@@ -43,7 +43,7 @@ export default function Projets() {
             <img
               src={selectedProject.img}
               alt={selectedProject.title}
-              className="w-[700px] h-[300px] md:h-[500px] object-cover rounded-xl mx-auto mb-4"
+              className="w-[700px] h-[300px] md:h-[300px] object-cover rounded-xl mx-auto mb-4"
             />
           )}
           <h3 className="text-xl text-stone-800 font-bold mb-2">{selectedProject.title}</h3>

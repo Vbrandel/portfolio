@@ -34,7 +34,7 @@ export function Welcome() {
               iconClassName="fa-solid fa-code"
       >
         <div className="flex flex-wrap justify-center gap-2">
-          {["React", "JavaScript", "HTML", "CSS", "Tailwind", "Node.js", "Wordpress", "sexy"].map((skill) => (
+          {["React", "JavaScript", "HTML", "CSS", "Tailwind", "Node.js", "Wordpress",].map((skill) => (
             <Tags key={skill} title={skill} />
           ))}
         </div>
@@ -44,7 +44,7 @@ export function Welcome() {
               title="Mes projets"
               iconClassName="fa-solid fa-book"
         >
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 2xl:grid-cols-4 gap-4">
           {projectsToShow.map((project: any) => (
             <CardsProject
               key={project.title}
@@ -54,8 +54,10 @@ export function Welcome() {
               onClick={() => handleProjectClick(project)}
             />
           ))}
+         <Link to="/projets" className="text-stone-200 bg-stone-600 p-3 rounded-xl font-bold md:size-fit text-center hover:bg-stone-400 hidden sm:block 2xl:hidden"><span className="fa-solid fa-arrow-left mr-2"></span>Mes autres projets</Link>
+
           <CardsProject
-            className="justify-center text-center"
+            className="justify-center text-center md:hidden 2xl:block"
           >
             <i className="fa-solid fa-laptop-code text-8xl text-stone-200"></i>
             <h3>Retrouvez tout mes projets</h3>
@@ -74,7 +76,7 @@ export function Welcome() {
               <img
                 src={selectedProject.img}
                 alt={selectedProject.title}
-                className="w-[700px] h-[300px] md:h-[500px] rounded-xl mx-auto mb-4"
+                className="w-[700px] h-[300px] md:h-[300px] object-cover rounded-xl mx-auto mb-4"
               />
             )}
             <h3 className="text-xl text-stone-800 font-bold mb-2">{selectedProject.title}</h3>
