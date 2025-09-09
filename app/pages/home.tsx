@@ -57,7 +57,7 @@ export function Welcome() {
          <Link to="/projets" className="text-stone-200 bg-stone-600 p-3 rounded-xl font-bold md:size-fit text-center hover:bg-stone-400 hidden sm:block 2xl:hidden"><span className="fa-solid fa-arrow-left mr-2"></span>Mes autres projets</Link>
 
           <CardsProject
-            className="justify-center text-center md:hidden 2xl:block"
+            className="justify-center text-center md:hidden 2xl:flex"
           >
             <i className="fa-solid fa-laptop-code text-8xl text-stone-200"></i>
             <h3>Retrouvez tout mes projets</h3>

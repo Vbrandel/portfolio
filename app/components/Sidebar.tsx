@@ -7,7 +7,7 @@ const Sidebar = () => {
         <span className="inline-block px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm font-medium size-fit">Open to work</span>
         <a href="#" className="px-4 py-2 border border-gray-500 rounded-full size-fit text-sm hover:bg-gray-700 scroll-smooth"><i className="fa-solid fa-file mr-2"></i>Mon CV</a>
       </div>
-      <img src="app/assets/tete.png" className="rounded-full md:w-50 2xl:w-60 mx-auto bg-stone-200"></img>
+      <img src="/assets/tete.png" className="rounded-full md:w-50 2xl:w-60 mx-auto bg-stone-200"></img>
       <div className="text-center text-stone-200">
         <h2 className="text-xl font-bold">Virgil Brandel</h2>
         <p>Développeur front-end</p>
