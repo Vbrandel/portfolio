@@ -60,7 +60,7 @@ export function Welcome() {
             className="justify-center text-center md:hidden 2xl:flex"
           >
             <i className="fa-solid fa-laptop-code text-8xl text-stone-200"></i>
-            <h3>Retrouvez tout mes projets</h3>
+            <h3 className="text-stone-200">Retrouvez tout mes projets</h3>
             <Link to="/projets" className="text-stone-800 bg-stone-200 p-3 rounded-xl font-bold text-center hover:bg-stone-100">Mes projets</Link>
           </CardsProject>
         </div>

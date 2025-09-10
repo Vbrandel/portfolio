@@ -59,7 +59,7 @@ export const ContactUs: React.FC = () => {
               id="user_email"
               name="user_email"
               required
-              placeholder="name@flowbite.com"
+              placeholder="nom@mail.com"
               className="shadow-sm bg-gray-50 border border-gray-300 text-stone-800 text-sm rounded-xl 
                          focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 
                          dark:bg-stone-800 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white 
@@ -79,10 +79,10 @@ export const ContactUs: React.FC = () => {
               id="user_name"
               name="user_name"
               required
-              placeholder="John Doe"
+              placeholder="Nom"
               className="block p-3 w-full text-sm text-stone-800 bg-stone-800 rounded-xl border border-gray-300 shadow-sm 
                          focus:ring-primary-500 focus:border-primary-500 
-                         dark:bg-gray-700 dark:bg-stone-800 dark:placeholder-gray-400 dark:text-white 
+                         dark:placeholder-gray-400 dark:text-white 
                          dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
             />
           </div>
@@ -102,7 +102,7 @@ export const ContactUs: React.FC = () => {
               placeholder="Ecrivez votre message"
               className="block p-2.5 w-full text-sm text-stone-800 bg-stone-800 rounded-xl shadow-sm border border-gray-300 
                          focus:ring-primary-500 focus:border-primary-500 
-                         dark:bg-stone-800 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white 
+                        dark:placeholder-gray-400 dark:text-white 
                          dark:focus:ring-primary-500 dark:focus:bg-stone-800"
             />
           </div>
