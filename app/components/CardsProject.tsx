@@ -12,7 +12,7 @@ type CardProjectProps = {
 export default function CardsProject({ title, content, className, img = "", children, onClick }: CardProjectProps) {
   return (
     <div
-      className={`rounded-xl p-5 bg-stone-600 ${className} cursor-pointer flex flex-col gap-3`}
+      className={`rounded-xl p-5 bg-stone-600 ${className} cursor-pointer flex flex-col gap-3 transition duration-300 hover:scale-101`}
       onClick={onClick}
     >
       {img && <img src={img} className="rounded-xl h-50 box-content object-cover"></img>}

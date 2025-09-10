@@ -11,7 +11,7 @@ type CardProps = {
 export default function Cards({ title, content, className = "", children, iconClassName = "fa-solid fa-user" }: CardProps) {
   return (
     <div
-      className={`rounded-xl p-6 bg-stone-200 ${className} transition duration-300 hover:scale-101`}
+      className={`rounded-xl p-6 bg-stone-200 ${className}`}
     >
       {title && (
         <div className="flex items-center gap-3 mb-3">

@@ -11,7 +11,7 @@ const Sidebar = () => {
       <div className="text-center text-stone-200">
         <h2 className="text-xl font-bold">Virgil Brandel</h2>
         <p>Développeur front-end</p>
-        <p className="font-extralight">Bonsecours (76)</p>
+        <p className="font-extralight">Rouen (76)</p>
         <p className="font-extralight">France</p>
       </div>
       <div className="flex mx-auto text-3xl">
