@@ -15,7 +15,7 @@ export default function CardsProject({ title, content, className, img = "", chil
       className={`rounded-xl p-5 bg-stone-600 ${className} cursor-pointer flex flex-col gap-3 transition duration-300 hover:scale-101`}
       onClick={onClick}
     >
-      {img && <img src={img} className="rounded-xl h-50 box-content object-cover"></img>}
+      {img && <img src={img} className="rounded-md h-50 box-content object-cover"></img>}
       {title && <h3 className="text-xl font-bold mb-2 text-stone-200">{title}</h3>}
       {content && <p className="text-stone-200">{content}</p>}
       {children}

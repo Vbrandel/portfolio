@@ -62,11 +62,17 @@ export default function Projets() {
               </div>
             </div>
           )}
-          {selectedProject.link && (
-            <a href={selectedProject.link} target="_blank" rel="noopener noreferrer" className="text-stone-800 bg-stone-300 p-3 rounded-xl font-bold ">
-              Voir le projet
-            </a>
-          )}
+            <div className="flex gap-4">
+              {selectedProject.link && (
+                <a href={selectedProject.link} target="_blank" rel="noopener noreferrer" className="text-stone-800 bg-stone-300 p-3 rounded-xl font-bold hover:bg-stone-300/60">
+                  <i className="fa-brands fa-github px-1 text-2xl"></i>
+                </a>
+              )}{selectedProject.demo && (
+                <a href={selectedProject.demo} target="_blank" rel="noopener noreferrer" className="text-stone-800 bg-stone-300 p-3 rounded-xl font-bold hover:bg-stone-300/60 ">
+                  <i className="fa-solid fa-globe px-1 text-2xl"></i>
+                </a>
+              )}
+            </div>
         </div>
         )}
       </Modal>

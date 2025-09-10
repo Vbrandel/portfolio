@@ -15,8 +15,8 @@ const Sidebar = () => {
         <p className="font-extralight">France</p>
       </div>
       <div className="flex mx-auto text-3xl">
-          <i className="fa-brands fa-github rounded-full border border-gray-500 p-4 m-2 cursor-pointer hover:bg-gray-700"></i>
-          <i className="fa-brands fa-linkedin-in rounded-full border border-gray-500 p-4 m-2 cursor-pointer hover:bg-gray-700"></i>
+          <a href="https://github.com/Vbrandel/" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-github rounded-full border border-gray-500 p-4 m-2 cursor-pointer hover:bg-gray-700"></i></a>
+          <a href="https://www.linkedin.com/in/virgil-brandel-8530831b8/" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-linkedin-in rounded-full border border-gray-500 p-4 m-2 cursor-pointer hover:bg-gray-700"></i></a>
         </div>
 
       <button className="mt-auto px-4 py-2 border border-gray-500 rounded-full size-fit mx-auto hover:bg-gray-700 scroll-smooth">

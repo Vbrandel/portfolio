@@ -5,7 +5,8 @@
     "content": "Application ReactJS",
     "description": "Intégration de la maquette Figma, rendre la page dynamique avec ReactJS, création de composants dynamiques..",
     "stack": ["ReactJS"],
-    "link": "https://github.com/Vbrandel/Kasa"
+    "link": "https://github.com/Vbrandel/Kasa",
+    "demo": ""
   },
   {
     "img": "/assets/leaguetracker.webp",
@@ -13,7 +14,8 @@
     "content": "Application ReactJS, API RIOT Games",
     "description": "Création d'une application web pour suivre le résultat des parties classés league of legend de notre serveur discord",
     "stack": ["ReactJS", "API","Javascript","Tailwind"],
-    "link": "https://github.com/monprojet2"
+    "link": "https://github.com/Vbrandel/LeagueTracker",
+    "demo": "https://leaguetracker.vercel.app/"
   },
   {
     "img": "/assets/vinyle.webp",
@@ -21,7 +23,8 @@
     "content": "Application ReactJS",
     "description": "Création d'une application web pour obtenir ma collection de vinyle via un fichier JSON ",
     "stack": ["ReactJS", "Tailwind", "Javascript"],
-    "link": "https://github.com/monprojet2"
+    "link": "https://github.com/Vbrandel/vinyle-collection",
+    "demo": "https://vbrandel.github.io/vinyle-collection/"
   },
   {
     "img": "/assets/p7.webp",
@@ -29,7 +32,8 @@
     "content": "Application ReactJS et Node",
     "description": "Création d'un serveur avec NodeJS, Express et MongoDB. Création d'une API Rest",
     "stack": ["React", "Express", "Express","MongoDB"],
-    "link": "https://github.com/monprojet2"
+    "link": "https://github.com/Vbrandel/OCRP7",
+    "demo": ""
   },
   {
     "img": "/assets/p3.webp",
@@ -37,7 +41,8 @@
     "content": "Page web dynamique",
     "description": "Intégration de la maquette Figma, rendre la page web dynamique avec javascript (création d'un modal, d'une page de connexion, d'un formulaire de création de compte fonctionnel).",
     "stack": ["Javascript", "CSS"],
-    "link": "https://github.com/monprojet2"
+    "link": "https://github.com/Vbrandel/ocr_projet_3",
+    "demo": ""
   },
   {
     "img": "/assets/pomodoro.webp",
@@ -45,7 +50,8 @@
     "content": "Création d'une application web",
     "description": "Création d'un pomodoro (timer avec étapes) en javascript",
     "stack": ["Javascript", "Tailwind"],
-    "link": "https://github.com/monprojet2"
+    "link": "https://github.com/Vbrandel/pomodoro",
+    "demo": "https://vbrandel.github.io/pomodoro/"
   },
   {
     "img": "/assets/booki.webp",
@@ -53,7 +59,8 @@
     "content": "Création d'une page web statique",
     "description": "Intégration d'une maquette figma avec HTML, CSS (flexbox)",
     "stack": ["CSS"],
-    "link": "https://github.com/monprojet2"
+    "link": "https://github.com/Vbrandel/booki",
+    "demo": "https://vbrandel.github.io/booki/"
   }
 ]
 
