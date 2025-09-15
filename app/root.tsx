@@ -43,14 +43,14 @@ export function Layout() {
         <Links />
       </head>
       <body>
-        {/* Layout principal en 2 colonnes */}
+        {/* Layout */}
         <div className="flex-col h-screen md:flex md:flex-row">
-          {/* Sidebar à gauche */}
+          {/* Sidebar */}
           <div className={`md:w-1/4 text-white${isProjetsPage ? " hidden md:block" : ""}`}>
             <Sidebar />
           </div>
 
-          {/* Contenu des routes à droite */}
+          {/* Content */}
           <div className="flex-1 overflow-y-auto p-6">
             <Outlet />
           </div>

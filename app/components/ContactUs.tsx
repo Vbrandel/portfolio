@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import type { FormEvent } from "react";
 import emailjs from "@emailjs/browser";
 
+
 export const ContactUs: React.FC = () => {
   const form = useRef<HTMLFormElement>(null);
   const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
@@ -14,13 +15,13 @@ export const ContactUs: React.FC = () => {
     setLoading(true);
     setStatus("idle");
 
-    emailjs
-      .sendForm(
-        "service_wz7ndlj",
-        "template_ia22g1p",
-        form.current,
-        "z3YDxhZ-6eFQPDD0U"
-      )
+    emailjs.sendForm(
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      form.current,
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+    )
+    
       .then(
         () => {
           setStatus("success");
@@ -38,19 +39,19 @@ export const ContactUs: React.FC = () => {
   return (
     <section id="contact-form" className="scroll-smooth">
       <div className="py-8 px-4 mx-auto max-w-screen-md">
-        <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-stone-800 dark:text-stone-800">
+        <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-stone-700">
           Envoyez moi un message
         </h2>
-        <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-stone-800 sm:text-xl">
-          Envie de travailler avec moi ?<br></br>
-          contactez moi ci dessous
+        <p className="mb-8 lg:mb-16 font-light text-center text-gray-800 sm:text-xl">
+        Envie de collaborer avec moi ?<br></br>
+        Contactez-moi ci-dessous
         </p>
 
         <form ref={form} onSubmit={sendEmail} className="space-y-8">
           <div>
             <label
               htmlFor="user_email"
-              className="block mb-2 text-sm font-medium text-stone-800 dark:text-stone-800"
+              className="block mb-2 text-sm font-medium text-stone-800"
             >
               Votre mail
             </label>
@@ -60,10 +61,8 @@ export const ContactUs: React.FC = () => {
               name="user_email"
               required
               placeholder="nom@mail.com"
-              className="shadow-sm bg-gray-50 border border-gray-300 text-stone-800 text-sm rounded-xl 
-                         focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 
-                         dark:bg-stone-800 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white 
-                         dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+              className="shadow-sm bg-stone-800 border border-gray-300 text-white text-sm rounded-xl 
+                         focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
             />
           </div>
 
@@ -80,10 +79,8 @@ export const ContactUs: React.FC = () => {
               name="user_name"
               required
               placeholder="Nom"
-              className="block p-3 w-full text-sm text-stone-800 bg-stone-800 rounded-xl border border-gray-300 shadow-sm 
-                         focus:ring-primary-500 focus:border-primary-500 
-                         dark:placeholder-gray-400 dark:text-white 
-                         dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+              className="shadow-sm bg-stone-800 border border-gray-300 text-white text-sm rounded-xl 
+                         focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
             />
           </div>
 
@@ -100,10 +97,8 @@ export const ContactUs: React.FC = () => {
               rows={6}
               required
               placeholder="Ecrivez votre message"
-              className="block p-2.5 w-full text-sm text-stone-800 bg-stone-800 rounded-xl shadow-sm border border-gray-300 
-                         focus:ring-primary-500 focus:border-primary-500 
-                        dark:placeholder-gray-400 dark:text-white 
-                         dark:focus:ring-primary-500 dark:focus:bg-stone-800"
+              className="shadow-sm bg-stone-800 border border-gray-300 text-white text-sm rounded-xl 
+                         focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
             />
           </div>
 
@@ -126,7 +121,7 @@ export const ContactUs: React.FC = () => {
           )}
           {status === "error" && (
             <p className="text-red-500 text-sm mt-4">
-              Impossible d'envoyer le mail, veuillez me contacter sur d'autres réseaux
+              Petit bug ? Pas de souci, vous pouvez me contacter directement sur mes autres réseaux !
             </p>
           )}
         </form>

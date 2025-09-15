@@ -5,7 +5,7 @@ type CardProps = {
   content?: string;
   className?: string;
   children?: React.ReactNode;
-  iconClassName?: string; // Optionnel, pour personnaliser l'icône
+  iconClassName?: string;
 };
 
 export default function Cards({ title, content, className = "", children, iconClassName = "fa-solid fa-user" }: CardProps) {

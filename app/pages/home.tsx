@@ -5,7 +5,6 @@ import Tags from "~/components/Tags";
 import { ContactUs } from "~/components/ContactUs";
 import { Link } from "react-router-dom";
 import Modal from "~/components/Modal";
-// @ts-ignore
 import projects from '../data/projects.json';
 
 export function Welcome() {
@@ -17,7 +16,7 @@ export function Welcome() {
     setModalOpen(true);
   };
 
-  // On ne garde que les 3 premiers projets pour l'accueil
+  // Nombre de projet de la page d'accueil
   const projectsToShow = projects.slice(0, 3);
 
   return (
