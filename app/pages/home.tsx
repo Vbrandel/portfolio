@@ -53,7 +53,7 @@ export function Welcome() {
               onClick={() => handleProjectClick(project)}
             />
           ))}
-         <Link to="/projets" className="text-stone-200 bg-stone-600 p-3 rounded-xl font-bold md:size-fit text-center hover:bg-stone-400 hidden sm:block 2xl:hidden"><span className="fa-solid fa-arrow-left mr-2"></span>Mes autres projets</Link>
+         <Link to="/projets" className="text-stone-200 bg-stone-600 p-3 rounded-xl font-bold md:size-fit text-center hover:bg-stone-400 hidden sm:block 2xl:hidden">Mes autres projets <span className="fa-solid fa-arrow-right mr-2"></span></Link>
 
           <CardsProject
             className="justify-center text-center md:hidden 2xl:flex"
