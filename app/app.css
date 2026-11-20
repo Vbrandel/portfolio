@@ -7,6 +7,13 @@
 
 html,
 body {
-  @apply bg-stone-300;
+  @apply bg-fondmain;
+}
 
+/* Ajout de la couleur sidebar en bas */
+@theme {
+  --color-sidebarcolor: #15202b;
+  --color-fondmain: #f2f4f9;
+  --color-card: #f9fbfc;
+  --color-title: #0b1c3b;
 }

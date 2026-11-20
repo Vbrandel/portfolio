@@ -20,7 +20,7 @@ export function Welcome() {
   const projectsToShow = projects.slice(0, 3);
 
   return (
-    <main className="grid grid-cols-1 md:grid-cols-2 gap-4 md:p-4">
+    <main className="grid grid-cols-1 md:grid-cols-2 gap-4 md:p-1">
       {/* Card 1 : A propos de moi */}
       <Cards
         title="A propos de moi"

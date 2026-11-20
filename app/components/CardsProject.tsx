@@ -12,13 +12,15 @@ type CardProjectProps = {
 export default function CardsProject({ title, content, className, img = "", children, onClick }: CardProjectProps) {
   return (
     <div
-      className={`rounded-xl p-5 bg-stone-600 ${className} cursor-pointer flex flex-col gap-3 transition duration-300 hover:scale-101`}
+      className={`rounded-xl overflow-hidden bg-white ${className} cursor-pointer flex flex-col transition duration-300 hover:scale-[1.02] shadow shadow-black/10`}
       onClick={onClick}
     >
-      {img && <img src={img} className="rounded-md h-50 box-content object-cover"></img>}
-      {title && <h3 className="text-xl font-bold mb-2 text-stone-200">{title}</h3>}
-      {content && <p className="text-stone-200">{content}</p>}
-      {children}
+      {img && <img src={img} alt={title ?? ""} loading="lazy" className="h-40 w-full object-cover" />}
+      <div className="flex flex-col gap-3 p-4 flex-1">
+        {title && <h3 className="text-lg font-bold text-stone-900">{title}</h3>}
+        {content && <p className="text-sm text-stone-500">{content}</p>}
+        {children}
+      </div>
     </div>
   );
 }
