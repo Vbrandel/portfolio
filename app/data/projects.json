@@ -1,4 +1,34 @@
+
 [
+  {
+    "img": "/assets/vplayer.webp",
+    "title": "vPlayer",
+    "content": "Player XTREAM Codes",
+    "description": "Application ElectronJS pour lire des playlists XTREAM Codes",
+    "stack": ["ElectronJS", "Backend","XTREAM Codes","HLS.js"],
+    "link": "",
+    "demo": ""
+  },
+  {
+    "img": "/assets/elisemartin.webp",
+    "title": "Elise Martin",
+    "content": "Site web Wordpress",
+    "description": "Site fictif d'une architecte d'intérieur. Intégration d'une maquette Wordpress avec le builder Divi",
+    "stack": ["Wordpress", "Divi"],
+    "warning": "Certificat HTTPS indisponible, mais le site reste accessible et fonctionnel",
+    "link": "",
+    "demo": "http://www.dev.sc1moku6009.universe.wf/"
+  },
+  {
+    "img": "/assets/dispensa.webp",
+    "title": "La Dispensa",
+    "content": "Site web Wordpress",
+    "description": "Site fictif d'une épicerie Italienne. Intégration d'une maquette Wordpress avec le builder Divi",
+    "stack": ["Wordpress", "Divi"],
+    "warning": "Certificat HTTPS indisponible, mais le site reste accessible et fonctionnel",
+    "link": "",
+    "demo": "http://www.sc1moku6009.universe.wf/"
+  },
   {
     "img": "/assets/p6.webp",
     "title": "Kasa",
