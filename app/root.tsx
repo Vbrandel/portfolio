@@ -46,7 +46,7 @@ export function Layout() {
         {/* Layout */}
         <div className="flex-col h-screen md:flex md:flex-row">
           {/* Sidebar */}
-          <div className={`md:w-1/4 text-white${isProjetsPage ? " hidden md:block" : ""}`}>
+          <div className={`md:w-1/5 text-white${isProjetsPage ? " hidden md:block" : ""}`}>
             <Sidebar />
           </div>
 

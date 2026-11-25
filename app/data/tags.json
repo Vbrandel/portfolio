@@ -1,0 +1,15 @@
+[
+  { "name": "React", "color": "bg-cyan-200" },
+  { "name": "JavaScript", "color": "bg-yellow-200" },
+  { "name": "HTML", "color": "bg-red-200" },
+  { "name": "CSS", "color": "bg-blue-200" },
+  { "name": "Tailwind", "color": "bg-sky-200" },
+  { "name": "Node.js", "color": "bg-lime-200" },
+  { "name": "Git", "color": "bg-orange-200" },
+  { "name": "TypeScript", "color": "bg-blue-300" },
+  { "name": "React Router", "color": "bg-pink-200" },
+  { "name": "UX/UI", "color": "bg-violet-200" },
+  { "name": "Wordpress", "color": "bg-slate-200" },
+  { "name": "Elementor", "color": "bg-red-200" },
+  { "name": "Divi", "color": "bg-fuchsia-200" }
+]

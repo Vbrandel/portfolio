@@ -1,7 +1,12 @@
 import React from "react";
+import { CiLocationOn } from "react-icons/ci";
+import { FaPaperclip } from "react-icons/fa6";
+
+
+
 
 const outlineBtn =
-  "px-4 py-2 border border-gray-500 rounded-full w-fit text-sm hover:bg-gray-700 transition-colors";
+  "px-4 py-2 border border-gray-500 rounded-full w-fit text-sm hover:bg-gray-700 transition-colors inline-flex items-center justify-center gap-1";
 
 const socialBtn =
   "flex items-center justify-center shrink-0 w-14 h-14 rounded-full border border-gray-500 m-2 hover:bg-gray-700 transition-colors";
@@ -14,7 +19,7 @@ const Sidebar = () => {
           Open to work
         </span>
         <a href="/assets/cv.pdf" target="_blank" rel="noopener noreferrer" className={outlineBtn}>
-          <i className="fa-solid fa-file mr-2" aria-hidden="true"></i>
+          <FaPaperclip />
           Mon CV
         </a>
       </div>
@@ -30,7 +35,10 @@ const Sidebar = () => {
       <div className="text-center text-stone-200">
         <h2 className="text-xl font-bold">Virgil Brandel</h2>
         <p className="text-cyan-200">Développeur front-end</p>
-        <p className="font-extralight">Rouen (76), France</p>
+        <p className="font-extralight inline-flex items-center justify-center gap-1">
+          <CiLocationOn className="shrink-0" aria-hidden="true" />
+          Rouen (76), France
+        </p>
       </div>
 
       <div className="flex mx-auto text-3xl">

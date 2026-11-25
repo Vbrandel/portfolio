@@ -17,3 +17,9 @@ body {
   --color-card: #f9fbfc;
   --color-title: #0b1c3b;
 }
+
+.contact-card {
+  background-image: url("/assets/bg-main.jpeg");
+  background-size: cover;
+  background-position: center;
+}
